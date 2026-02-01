@@ -23,14 +23,13 @@ bars:
       height: 32
     widgets:
       left: ["home", "active_window", "taskbar"]
-      center: ["launchpad", "clock", "weather", "media", "volume"]
+      center: ["cava", "launchpad", "clock", "weather", "media", "volume"]
       right:
         [
           "wifi",
           "systray",
           "cpu",
           "memory",
-          "disk",
           "traffic",
           "volume",
           "bluetooth",
@@ -521,3 +520,19 @@ widgets:
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
+  cava:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 12
+      min_bar_height: 0
+      gradient: 1
+      foreground: "#89b4fa"
+      gradient_color_1: '#74c7ec'
+      gradient_color_2: '#89b4fa'
+      gradient_color_3: '#cba6f7'
+      bars_number: 8
+      bar_spacing: 2
+      bar_width: 4
+      bar_type: "bars"
+      framerate: 60
+      hide_empty: true
